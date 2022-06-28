@@ -1,0 +1,491 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #0B3954;
+   --cor-de-link: #fff0da;
+   --cor-do-titulo: #fff;
+   --cor-da-font: #f15827;
+   --cor-caixas: #fff0da;
+   --cor-botoes: #f15827;
+   
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 0px 9.6rem;
+    width: 100%;
+    max-width: 980px;
+}
+
+section.menu h3.menu__title{
+    color: #fff0da;
+}
+
+/*Sessão Title*/
+
+section.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    color:var(--cor-do-titulo);
+}
+
+
+/* itens do menu*/
+
+nav ul.menu_list {
+    display: flex;
+    justify-content: space-between;
+    width: 46.9rem;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: #f15827;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    background: #f15827;
+
+    
+    
+    transition: 0.3s;
+}
+
+nav ul li a::hover:after{
+    width: 100%;
+}
+
+
+
+/*sessão de titulo*/
+
+section.title{
+    margin: 2rem 0rem 0rem 9.375rem;
+
+}
+
+div.title_container{
+    width: 50rem;
+}
+
+    div.title_container h2{
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 3.125rem;
+    }
+
+    div.title_div{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        
+    }
+    
+    img.title_profile{
+        width: 15.625rem;
+        margin-left: 12.5rem;
+        background:var(--cor-de-fundo);
+    }
+    
+    section.title div.title_div div.title_bio{
+        font-size: 17px;
+        line-height: 1.437rem;
+        width: 50rem;
+       
+    }
+
+    
+    section.title div.title_div div.title_subsection{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1rem;
+    }
+
+    ul.title_network{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        font-size: 14px;
+        width: 31.25rem;
+    }
+   
+/*Sessão About*/
+
+section.about{
+    padding: 3.875rem 9.5rem;
+    background-color: #fff0da ;
+}
+
+
+    .about_title{
+        font-size: 30px;
+    }
+
+    .about__container{
+        width: 50rem;
+    }
+
+    section.about div.about__container p {
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 1rem; 
+    }
+
+    section.about div.about__container img{
+        margin: 1rem 0;
+    }
+
+/*sessão skills*/
+section.skills{
+    padding: 4rem 6.25rem;
+}
+
+section.skills h3.skills_title {
+    font-size: 24px;
+    text-align: center;
+    color: #fff0da;
+}
+
+section.skills div.skills__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.skills div.skills__line div.skills__box{
+    background-color: var(--cor-caixas);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1.437rem 0.93rem 1.437rem 0.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 0.625rem;
+}
+
+.skills__box ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    padding: 4rem 6.25rem;
+}
+
+section.hobbies h3.hobbies__title {
+    font-size: 24px;
+    text-align: center;
+    color: #fff0da;
+}
+
+section.hobbies div.hobbies__line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section.hobbies div.hobbies__line div.hobbies__box{
+    background-color: var(--cor-caixas);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1.437rem 0.93rem 1.437rem 0.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 0.625rem;
+}
+
+.hobbies__box ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+    padding: 4rem 0;
+    background-color: #fff0da;
+    width: 100%;
+}
+
+section.academic h2.academic__title {
+    font-size: 24px;
+    text-align: center;
+}
+
+section.academic div.academic__courses{
+    display: flex;
+    justify-content: center;
+}
+
+section.academic div.academic__courses__box{
+   width: 27rem;
+   margin: 0 1rem;
+}
+
+div.academic__courses ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div.academic__courses ul li{
+    margin: 2rem;
+    padding: 0;
+}
+
+div.academic__courses__item__img{
+    background-color:var(--cor-caixas);
+    padding: 8%;
+   
+}
+
+section.academic div.academic__courses__box ul.academic__courses__list img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+}
+
+#fundacao{
+    width: 25rem;
+    height: 16.25rem;
+}
+
+/* experiência*/
+
+section.experience{
+    padding: 4rem 0;
+    background-color: var(--color-fundo);
+    color: #fff0da;
+}
+
+section.experience h2.experience__section__title{
+    font-size: 24px;
+    text-align: center;  
+}
+
+section.experience div.experience__box{
+    display: flex;
+    justify-content: space-between;
+    width: 75rem;
+    margin: 9.625rem;  
+}
+
+section.experience div.experience__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9.625rem;
+}
+
+section.experience div.experience__box img{
+    width: 34.37rem;
+    height: 18.75rem;
+}
+
+
+section.experience div.experience__text h3{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1.25rem;
+   
+}
+
+
+/*Contato*/
+
+section.formcontato{
+    padding: 4rem 0;
+    background-color:var(--cor-de-fundo);
+    
+}
+
+section.formcontato div.formcontato__text h2{
+    font-size: 28px;
+    text-align: center;
+    margin-left: 31.25rem;
+}
+
+section.formcontato div.formcontato__text h3{
+    font-size: 20px;
+    margin: 1.25rem;
+    color: #000000;
+    
+}
+
+section.formcontato div.formcontato__text{
+    margin: 9.625rem;
+    
+}
+
+section.formcontato div.formcontato__contacto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+
+form.formcontato__form{
+    width: 56.25rem;
+    height: 28.125rem;  
+    padding: 0.625rem;
+   
+    border-radius: 0.312rem;
+    align-items: center;
+}
+
+#nome{
+    width: 53rem;
+    padding: 0.937rem;
+    margin: 0.312rem;
+    border: solid #f15827;
+    border-radius: 0.312rem;
+}
+
+#email{
+    width: 28.125rem;
+    padding: 0.937rem;
+    margin: 0.625rem;
+    border: solid #f15827;
+    border-radius: 0.312rem;
+    margin-left: 0.312rem;
+
+}
+
+#assunto{
+    width: 19.5rem;
+    padding: 0.937rem;
+    margin: 0.625rem;
+    border: solid #f15827;
+    border-radius: 0.312rem;
+    margin-left: 2rem;
+}
+
+#mensagem{
+    width: 54.68rem;
+    height: 18.75rem;
+    margin: 0.312rem;
+    border: solid #f15827;
+    border-radius: 0.312rem;
+}
+
+button.formcontato__botao{
+    width: 9.375rem;
+    padding: 1.25rem;
+    margin: 0.312rem;
+    border: none;
+    background-color: #f15827;
+    border-radius: 0.312rem;
+}
+
+
+/*footeer*/
+
+section.footer{
+   font-size: 16px;
+   
+}
+
+section.footer div.footer__rodape{
+    display: flex;
+    justify-content: center;
+    padding: 3.375rem;
+    
+    
+}
+
+
+section.footer div.footer__rodape p span{
+    font-style: inherit;
+    font-size: 18px;
+    color: #f15827;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 405px) {
+
+/*Menu*/
+
+
+
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
